@@ -1,6 +1,5 @@
 # PowerplayToastKit
 
-[![CI Status](https://img.shields.io/travis/Mithilesh Parmar/PowerplayToastKit.svg?style=flat)](https://travis-ci.org/Mithilesh Parmar/PowerplayToastKit)
 [![Version](https://img.shields.io/cocoapods/v/PowerplayToastKit.svg?style=flat)](https://cocoapods.org/pods/PowerplayToastKit)
 [![License](https://img.shields.io/cocoapods/l/PowerplayToastKit.svg?style=flat)](https://cocoapods.org/pods/PowerplayToastKit)
 [![Platform](https://img.shields.io/cocoapods/p/PowerplayToastKit.svg?style=flat)](https://cocoapods.org/pods/PowerplayToastKit)
