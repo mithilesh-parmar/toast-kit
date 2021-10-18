@@ -4,6 +4,33 @@
 [![License](https://img.shields.io/cocoapods/l/PowerplayToastKit.svg?style=flat)](https://cocoapods.org/pods/PowerplayToastKit)
 [![Platform](https://img.shields.io/cocoapods/p/PowerplayToastKit.svg?style=flat)](https://cocoapods.org/pods/PowerplayToastKit)
 
+## Toasts Type
+
+Success.   
+
+<img width="339" alt="Screenshot 2021-10-17 at 9 22 30 AM" src="https://user-images.githubusercontent.com/25058734/137700669-77a64939-d6bc-480d-93f6-c6973d0b6997.png">
+
+
+Warning 
+
+<img width="333" alt="Screenshot 2021-10-17 at 9 22 38 AM" src="https://user-images.githubusercontent.com/25058734/137701125-b11456ec-dbe9-4381-bdcd-651c9b33843b.png">
+
+
+Error
+
+<img width="332" alt="Screenshot 2021-10-17 at 9 22 44 AM" src="https://user-images.githubusercontent.com/25058734/137701189-7d31b2f2-30b3-4c3c-918b-cd85f0d1dadd.png">
+
+
+Info
+
+<img width="326" alt="Screenshot 2021-10-17 at 9 35 08 AM" src="https://user-images.githubusercontent.com/25058734/137701390-dd567573-2ad2-4b98-884e-a4e9ae66dc9d.png">
+
+
+Custom View (Dialog)
+
+<img width="406" alt="Screenshot 2021-10-17 at 9 23 10 AM" src="https://user-images.githubusercontent.com/25058734/137701485-2d5744da-8330-4d52-a9d0-c2e00fc215dd.png">
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -70,7 +97,7 @@ PowerplayToastKit
 ## But wait, there's more!
 ---------
 ```swift
-// you can also show custom views in place of Toast (eg. dialog, bottomsheet, loading indicators, etc..)
+// You can show custom views in place of Toast (eg. dialog, bottomsheet, loading indicators, etc..)
 
 // we pass .greatestFiniteMagnitude as TimeInterval which will make the Dialog appear for infinte time
 
@@ -81,6 +108,25 @@ dialogView.isUserInteractionEnabled = true
 PowerplayToastKit
     .shared
     .showToast(withCustomView: dialogView, at: .bottom, for: .greatestFiniteMagnitude)
+    
+    
+    
+    
+// You can Provide a ToastBuilder to change theme and modify the Toast View
+    
+let themeBuilder = ToastThemeBuilder()
+    .set(backgroundColor: UIColor.systemRed.withAlphaComponent(0.78))
+    .set(titleTextColor: .black)
+    .set(messageTextColor: .black)
+    .set(toastCornerRadius: 6)
+        
+let toastBuilder = ToastBuilder()
+    .set(theme: themeBuilder)
+    .set(type: ToastType.info(title: "Info", message: "Here's a Toast with a custom builder"))
+    .set(position: .top)
+        
+PowerplayToastKit.shared.showToast(withBuilder: toastBuilder)
+    
 ```
 
 
@@ -97,7 +143,10 @@ PowerplayToastKit
 [Mithlesh Parmar](https://github.com/mithilesh-parmar) ([linkedin](https://www.linkedin.com/in/mithilesh-parmar-97395712b/))
 
 
-## Show some ❤️ and star the repo to support the project
+
+# Show some ❤️ and star the repo to support the project
+# [Medium Article](https://medium.com/@mithileshparmar1/creating-your-own-toast-library-from-scratch-d3f1ec51d023) for this library
+
 
 ## License
 
