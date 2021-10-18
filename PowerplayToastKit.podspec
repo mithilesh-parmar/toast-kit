@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PowerplayToastKit'
-  s.version          = '0.0.1'
+  s.version          = '0.1.0'
   s.summary          = 'A Simple Toast Library to show Toast and dialogs in iOS.'
   s.requires_arc     = true
   s.platform         = :ios
