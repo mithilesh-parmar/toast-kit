@@ -144,8 +144,8 @@ PowerplayToastKit.shared.showToast(withBuilder: toastBuilder)
 
 
 
-# Show some ❤️ and star the repo to support the project
-# [Medium Article](https://medium.com/@mithileshparmar1/creating-your-own-toast-library-from-scratch-d3f1ec51d023) for this library
+### Show some ❤️ and star the repo to support the project
+### [Medium Article](https://medium.com/@mithileshparmar1/creating-your-own-toast-library-from-scratch-d3f1ec51d023) for this library
 
 
 ## License
