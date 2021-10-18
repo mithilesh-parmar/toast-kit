@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PowerplayToastKit'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'A Simple Toast Library to show Toast and dialogs in iOS.'
   s.requires_arc     = true
   s.platform         = :ios
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'http://www.linkedin.com/in/mithilesh-parmar-97395712b'
   s.social_media_url = 'https://twitter.com/corleone_parmar'
   
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
   
   s.source_files = 'PowerplayToastKit/Classes/**/*{.swift}'
