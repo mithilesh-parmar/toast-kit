@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PowerplayToastKit'
-  s.version          = '0.2.1'
+  s.version          = '1.0.0'
   s.summary          = 'A Simple Toast Library to show Toast and dialogs in iOS.'
   s.requires_arc     = true
   s.platform         = :ios
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   s.source_files = 'PowerplayToastKit/Classes/**/*{.swift}'
   
   s.resource_bundles = {
-    'Resources' => ['PowerplayToastKit/Assets/success.png']
+    'Resources' => ['PowerplayToastKit/Assets/*.{png}']
   }
   
   # s.public_header_files = 'Pod/Classes/**/*.h'
