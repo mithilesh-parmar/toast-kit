@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   s.source_files = 'PowerplayToastKit/Classes/**/*{.swift}'
   
   s.resource_bundles = {
-    'Resources' => ['PowerplayToastKit/Assets/*.{png}']
+    'Resources' => ['PowerplayToastKit/Assets/success.png']
   }
   
   # s.public_header_files = 'Pod/Classes/**/*.h'
